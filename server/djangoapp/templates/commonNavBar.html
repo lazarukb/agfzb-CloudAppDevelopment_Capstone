@@ -20,7 +20,7 @@
             {% if user.is_authenticated %}
             <li><button type="button" class="btn btn-outline-primary">Hello {{ user.username }}</button></li>
             <p>&nbsp;&nbsp;</p>
-            <li><button type="button" class="btn btn-primary">Logout</button></li>
+            <li><a href="/djangoapp/logout"><button type="button" class="btn btn-primary">Logout</button></a></li>
             {% else %}
             <li><button type="button" class="btn btn-outline-primary me-2">Login</button></li>
             <p>&nbsp;&nbsp;</p>
