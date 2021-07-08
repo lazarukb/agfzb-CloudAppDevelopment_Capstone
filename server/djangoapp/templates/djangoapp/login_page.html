@@ -14,23 +14,23 @@
 </head>
 
     <body>
-    <!--Add a nav bar here -->
-    {% include 'commonNavBar.html' %}
+        <!--Add a nav bar here -->
+        {% include 'commonNavBar.html' %}
 
-    <!-- Login Form -->
-    <h2>This needs to be styled</h2>
-    <form action="{% url 'djangoapp:login' %}"  method="post">
-        {% csrf_token %}
-        <div class="container">
-          <label for="username"><b>User Name</b></label>
-          <input type="text" placeholder="Enter User Name: " name="username" required>
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password: " name="psw" required>
-          <div>
-            <button class="button" type="submit">Login</button>
-          </div>
-        </div>
-      </form>
+        <!-- Login Form -->
+        <h2>This needs to be styled</h2>
+        <form action="{% url 'djangoapp:login' %}"  method="post">
+            {% csrf_token %}
+            <div class="container">
+            <label for="username"><b>User Name</b></label>
+            <input type="text" placeholder="Enter User Name: " name="username" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password: " name="psw" required>
+            <div>
+                <button class="button" type="submit">Login</button>
+            </div>
+            </div>
+        </form>
     </body>
 
 </html>
